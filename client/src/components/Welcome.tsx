@@ -8,7 +8,7 @@ import { useState } from 'react';
 const companyCommonStyles = "min-h-[70px] sm:px-0 px-2 sm:min-w-[120px] flex justify-center items-center border-[0.5px] border-gray-400 text-sm font-light text-white";
 
 const Welcome = () => {
-    const [isLoading, setIsLoading] = useState<boolean>(true);
+    const [isLoading, setIsLoading] = useState<boolean>(false);
 
     const connectWallet = () => {
         console.log('connectWallet');
@@ -20,7 +20,7 @@ const Welcome = () => {
                 <div className="flex flex-1 justify-start items-start flex-col md:mr-10">
                     <h1 className='text-3xl sm:text-5xl text-white text-gradient py-1'>Send crypto <br /> across the world</h1>
                     <p className='text-left mt-5 text-white font-semibold md:w-9/12 w-11/12 text-base'>Explore the crypto world. Buy and sell cryptocurrencies easily on Krypt.</p>
-                    <div className='flex flex-col justify-start mt-5'>
+                    <div className='flex flex-col justify-start mt-5 w-full'>
                         <button 
                             className='bg-[#2952e3] flex items-center my-5 py-2 px-7 mx-4 rounded-full cursor-pointer hover:bg-[#2546bd] w-fit'
                             type='button'
