@@ -1,11 +1,24 @@
 import './App.css'
-import Web3 from 'web3'
+
+import { 
+  Navbar, 
+  Footer, 
+  Services, 
+  Transactions, 
+  Welcome 
+} from './components'
 
 function App() {
 
   return (
-    <div className='container mx-auto'>
-      <h1 className="text-3xl font-bold">Welcome to Kyrpt</h1>
+    <div className='min-h-screen'>
+      <div className='gradient-bg-welcome'>
+        <Navbar />
+        <Welcome />
+      </div>
+      <Services />
+      <Transactions />
+      <Footer />
     </div>
   )
 }
